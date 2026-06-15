@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Description -->
+    <meta name="description"
+        content="Practice project demonstrating Semantic HTML, Metadata, Accessibility, and HTML Entities.">
+
+    <!-- SEO Keywords -->
+    <meta name="keywords"
+        content="HTML, Semantic HTML, Accessibility, Metadata, SEO">
+
+    <!-- Author Information -->
+    <meta name="author" content="Muntazir Hussain">
+</head>    
+<body>
+      <!-- Website Header  -->
+    <header>
+        <h1>My HTML Practice Website</h1>
+        <p>Learning Semantic HTML, Accessibility, and best Practices.</p>
+
+        <!-- Navigation Menu  -->
+        <nav>
+            <a href="#about">About </a> |
+            <a href="#articles">Articles</a> | 
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>  
+    <hr> 
+
+    <!-- Main Content  -->
+    <main>
+        <!-- About Section  -->
+        <section id="about">
+            <h2>About This Project</h2>
+            <p>This page was created to practice important HTML concepts such as semantic selments, metadata, accessibility, and HTML entities.</p>
+
+            <figure>
+                <!-- Accessibility: alt attribute describes image  -->
+                <img 
+                    src="https://via.placeholder.com/400*200" 
+                    alt="Sample web development workspace"
+                > 
+                <figcaption>
+                    Figure 1: A sample workspace image.
+                </figcaption>
+
+            </figure>
+        </section> 
+
+        <!-- Articles Section  -->
+        <section id="articles">
+
+            <h2>Learning Articles</h2>
+
+            <!-- Article 1  -->
+            <article>
+                <h3>What is Semantic HTML?</h3>
+                <p>
+                    Semantic HTML uses meaningful tags such as
+                    &lt;header&gt;, &lt;section&gt;, and &lt;footer&gt;
+                    to describe content structure.
+                </p>
+            </article> 
+
+            <!-- Article 2  -->
+            <article>
+                <h3>Why Metadata Matters</h3>
+                <p>
+                    Metadata helps browsers, search engines, and devices
+                    understand your webpage.
+                </p>
+            </article>
+        </section>
+
+        <hr>
+        <!-- Sidebar Content  -->
+        <aside>
+
+            <h3>Quick Facts</h3>
+
+            <ul>
+                <li>Semantic HTML improves SEO.</li>
+                <li>Accessibility improves user experience.</li>
+                <li>Clean code is easier to maintain.</li>
+            </ul>
+        </aside>
+
+        <hr>
+
+        <!-- HTML Entities Practice  -->
+
+        <section>
+            <h2>HTML Entities Examples</h2>
+
+            <p>Copyright Symbol: &copy;</p>
+            <p>Less Than Symbol: &lt;</p>
+            <p>Greater Than Symbol: &gt;</p>
+            <p>Non-Breaking Space Example: Hello&nbsp;World</p>
+        </section>
+
+        <hr>
+
+        <!-- Accessible Contact Form  -->
+        <section id="contact">
+            <h2>Contact Form</h2>
+
+            <form action="">
+                <!-- label improves accessibility  -->
+                <label for="name">Full Name:</label> <br>
+                <input 
+                    type="text"
+                    id="name"
+                    name="name"
+                    required  
+                >  
+                
+                <br> <br>
+
+                <label for="email">Email Address:</label> <br>
+                <input 
+                    type="email"
+                    id="email"  
+                    name="email"
+                    required
+                >
+
+                <br> <br>
+
+                <label for="message">Message:</label> <br>
+                <textarea 
+                    name="message" 
+                    id="message"
+                    rows="5"
+                    cols="30"
+                >
+                </textarea>
+
+                <br> <br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- website footer  -->
+
+    <footer>
+        <p>
+            &copy; 2026 My HTML Practice Project.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+</html>
