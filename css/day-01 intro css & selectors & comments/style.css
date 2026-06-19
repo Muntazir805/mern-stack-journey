@@ -1,0 +1,92 @@
+/* Universal Selector  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Selector  */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    padding: 40px;
+}
+
+/* Grouping Selector  */
+h1,h2,h3{
+    color: navy;
+    margin-bottom: 10px;
+}
+
+/* ID Selector  */
+#main-heading{
+    color: darkred;
+}
+
+/* Class Selector  */
+.intro{
+   color: blue;
+   font-size: 18px;
+   margin-bottom: 10px;
+}
+
+/* Descendant Selector 
+Targets p inside div */
+div p{
+    color: green;
+}
+
+/* Child Selector 
+Targets direct li inside ul */
+ul > li{
+   margin-bottom: 8px;
+}
+
+/* Adjacent Sibling  
+First p after h2*/
+h2 + p{
+    font-weight: bold;
+}
+
+/* General sibling Selector
+All p after h2
+ */
+h2 ~ p{
+    line-height: 1.6;
+}
+
+/* Attribute Selector  */
+input[type]{
+    padding: 8px;
+}
+
+/* Exact Attribute Match  */
+input[type="text"]{
+    border: 2px solid blue;
+}
+
+/* Start with  */
+a[href^="https"]{
+    color: green;
+}
+
+/* Ends with  */
+a[href$=".com"]{
+    font-weight: bold;
+}
+
+a[href*="google"]{
+    background-color: yellow;
+}
+
+/* Element Selector  */
+button{
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor:pointer;
+}
+
+button:hover{
+   background-color: darkred;
+}
