@@ -1,0 +1,121 @@
+/* Universal Selector  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling  */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hero Section  */
+.hero {
+    /* background-image  */
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(https://images.unsplash.com/photo-1696733585001-868eb49cbfa6?q=80&w=1399&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+    /* prevent image repeating  */
+    background-repeat: no-repeat;
+
+    /* cover full section  */
+    background-size: cover;
+
+    /* center image  */
+    background-position: center;
+
+    /* fixed background  */
+    background-attachment: fixed;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-content{
+    /* color by name  */
+    color: white;
+
+    /* opacity example  */
+    opacity: 0.95;;
+}
+
+/* RGB color  */
+.hero-content h1{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+/* RGBA color  */
+.hero-content p{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* Button Styling */
+button{
+    /* hsl  */
+    background-color: hsl(210, 100%, 50%);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Hover Effect  */
+button:hover{
+    /* hsla */
+    background-color: hsl(210, 100%, 40%,1);
+}
+
+/* hero-section-1 */
+.hero-section-1,.hero-section-2,.hero-section-3{
+    width: 100%;
+    height: 60vh;
+    padding-inline: 20px;
+}
+
+.hero-section-1 h2 , .hero-section-2 h2 ,.hero-section-3 h2{
+    font-size: 32px;
+    margin-block: 20px;
+}
+
+.bg-linear-gradient{
+    background: linear-gradient(to right,#ff6b6b,#4ecdc4);
+    width: 100%;
+    height: 200px;
+}
+
+.bg-radial-gradient{
+    background: radial-gradient(circle, #ff9a9e,
+    #fad0c4);
+     width: 100%;
+    height: 200px;
+}
+.bg-conic-gradient{
+    background:
+        conic-gradient(
+            red,
+            yellow,
+            green,
+            blue,
+            red
+       );
+    width: 100%;
+    height: 200px;
+}
+
+
+
+
+
