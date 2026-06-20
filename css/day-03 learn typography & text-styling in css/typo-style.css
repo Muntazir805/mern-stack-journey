@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-origin: border-box;
+}
+
+/* page styling  */
+body{
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+}
+
+/* Blog Container  */
+.container{
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/* Main Heading  */
+.main-heading{
+
+    /* Font Properties  */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+
+    /* Text Properties  */
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px gray;
+
+    margin-bottom: 20px;
+}
+
+/* Author Name  */
+.author{
+    
+    font-variant: small-caps;
+    text-align: center;
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+}
+
+/* Introduction Paragraph  */
+.intro{
+
+    line-height: 1.8;
+    text-indent: 50px;
+    word-spacing: 5px;
+
+    margin-bottom: 20px;
+}
+
+/* Sub Headings  */
+h2{
+    text-decoration: underline;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Article Content  */
+.content{
+
+    line-height: 2;
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+/* List Styling  */
+ul{
+    margin-left: 30px;
+}
+
+li{
+    line-height: 2;
+}
+
+/* White Space Example  */
+.long-word{
+
+    margin-top:20px;
+    border: 2px solid black;
+    padding: 10px;
+
+    /* Break long words automatically  */
+    overflow-wrap: break-word;
+
+    /* Alternative word breaking  */
+    word-break: break-all;
+}
+
+.white-space-container{
+    width: 200px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-block: 10px;
+}
+
+.white-space{
+    white-space: nowrap;
+}
+
+/* Font Stretch  */
+.stretch{
+    font-stretch: expanded;
+    margin-block: 10px;
+}
+
+/* Vertical Align  */
+.icon{
+    vertical-align: middle;
+    margin-block: 10px;
+}
+
+.shorthand{
+    font: italic bold 20px Arial, sans-serif;
+    margin-block: 10px;
+}
+
+
