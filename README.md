@@ -12,32 +12,29 @@ Each technology has its own folder, and inside each folder I organize my daily p
 
 ---
 
-## 📁 Project Structure
+Here’s the same section rewritten for your **mern-stack-journey repo structure** (clean and consistent with your learning setup):
 
-mern-stack-journey/
-│
-├── html/
-│ ├── day-01/
-│ ├── day-02/
-│ ├── day-03/
-│ └── ...
-│
-├── css/
-│ ├── day-01/
-│ ├── day-02/
-│ ├── day-03/
-│ └── ...
-│
-├── javascript/ (coming soon)
-│ ├── day-01/
-│ ├── day-02/
-│ └── ...
-│
-├── projects/
-│ ├── mini-projects/
-│ └── assignments/
-│
-└── README.md
+---
+
+## 📂 Files in this Project
+
+- `html/day-01/index.html`: First HTML practice page (basic structure & elements).
+
+- `html/day-02/`: Continued HTML practice with small exercises and experiments.
+
+- `html/day-03/`: HTML assignments and improved structure practice.
+
+- `css/day-01/style.css`: First CSS practice (selectors, colors, basic styling).
+
+- `css/day-02/`: CSS practice for typography, spacing, and layout basics.
+
+- `css/day-03/`: Advanced CSS practice and small UI styling tasks.
+
+- `javascript/day-01/`: JavaScript basics (variables, operators, simple logic – in progress).
+
+- `projects/mini-projects/`: Small practice projects combining HTML, CSS, and JS.
+
+- `projects/assignments/`: Task-based assignments from SMIT training.
 
 ---
 
