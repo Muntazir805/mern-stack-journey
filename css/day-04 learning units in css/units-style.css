@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+     font-size: 16px; /* Base size for rem unit  */
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:  #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 30px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #1e293b;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+section{
+    width: 70%;
+    margin: 60px auto;
+}
+
+h2{
+    margin-bottom: 15px;
+    color: #1e40af;
+}
+
+/* Absolute Unit (px) */
+.px-box{
+    padding: 20px;  /* space inside box */
+    font-size: 20px;  /*text size in pixels */
+    background-color: #dbeafe;
+    border: 2px solid #c9daf5;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+ /* Relative Units  */
+
+ .unit-box {
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.unit-box p{
+    font-size: 18px;
+}
+
+.top{
+    width: 100%;
+}
+.unit-box .top , .unit-box h3 , .unit-box span{
+    display: inline-block;
+}
+
+ .unit-box h3 , .unit-box span{
+    width: 49%;
+    font-size: 20px;
+    margin-bottom: 10px;
+ }
+
+span{
+    text-align: right;
+}
+
+
+
+.percent-box{
+    background-color: #dcfce7;
+    border: 1px solid #a0efbc;
+}
+
+.percent-box .top{
+    color: green;
+}
+
+.em-box{
+    background-color: #fef9c3;
+    border: 1px solid #eae37c;
+}
+
+.em-box .top{
+   color: #e06e0a;
+}
+
+.rem-box{
+    background-color: #f6e7ef;
+    border: 1px solid #ecc1d9;
+}
+
+.rem-box .top{
+    color: #b31ae1;
+}
+
+.vw-box{
+    background-color: #dbeafe;
+    border: 1px solid #b1d0f7;
+}
+
+.vw-box .top{
+    color: #207aef;
+}
+
+.vh-box{
+    background-color: #d9f4ee;
+    border: 1px solid #a4f1df;
+}
+
+.vh-box .top{
+    color: #146856;
+}
+
+.vmin-box{
+   background-color: #fbcfe8;
+   border: 1px solid #ebacd0;
+}
+.vmin-box .top{
+    color: #b12574;
+}
+
+.vmax-box{
+    background-color: #fed7aa;
+    border: 1px solid #ecc18f;
+}
+.vmax-box .top{
+    color: #d27a15;
+}
+
+/* funtions styling */
+
+.fun-box{
+    width: 45%;
+    margin: 15px;
+    padding: 26px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    display: inline-block;
+    border: 1px solid green;
+}
+
+.fun-box h3{
+    color: rgb(255, 0, 0);
+}
+
+.fun-box .code-preview{
+    text-align: center;
+    border: 1px solid rgb(113, 105, 105);
+    padding: 8px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    margin-block: 8px;
+    font-weight: bold;
+    background-color: rgb(219, 219, 245);
+}
+
+.fun-box p{
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+

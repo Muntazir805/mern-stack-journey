@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-04 learning units & Measurments in CSS</title>
+    <link rel="stylesheet" href="units-style.css">
+</head>
+<body>
+
+    <main class="main-container">
+
+       <h1>CSS Units & Measurements</h1>
+
+       <!-- Absolute Units  -->
+        <section>
+             <h2>1. Absolute Unit px (pixel)</h2>
+             <div class="px-box">
+                <h3>This text uses px unit.</h3>
+                <p>Padding:20px | Font-size:20px | border:2px</p>
+             </div>
+        </section>
+
+        <!-- Relative Units  -->
+        <section>
+            <h2>2. Relative Units</h2>
+            <div class="unit-box percent-box">
+                <div class="top">
+                    <h3>% (Percentage)</h3>
+                    <span>width:80%</span>
+                </div>
+                
+                <p>Relative to the parent element.</p>
+            </div>
+            <div class="unit-box em-box">
+                <div class="top">
+                    <h3>em</h3>
+                    <span>Font-size:2em</span>
+                </div>
+                <p>Relative to the font-size of the parent element.</p>
+            </div>
+            <div class="unit-box rem-box">
+                <div class="top">
+                    <h3>rem</h3>
+                    <span>Font-size:2rem</span>
+                </div>
+                <p>Relative to the font-size of the root (html) element.</p>
+            </div>
+            <div class="unit-box vw-box">
+                <div class="top">
+                    <h3>vw (Viewport Width)</h3>
+                    <span>Width:50vw</span>
+                </div>
+                <p>1vw = 1% of the viewport width.</p>
+            </div>
+            <div class="unit-box vh-box">
+                <div class="top">
+                    <h3>vh (Viewport Height)</h3>
+                    <span>Height:50vh</span>
+                </div>
+                <p>1vh = 1% of the viewport height.</p>
+            </div>
+            <div class="unit-box vmin-box">
+                <div class="top">
+                    <h3>vmin</h3>
+                    <span>Width:20vmin</span>
+                </div>
+                <p>Relative to the smaller dimension of viewport (width or height).</p>
+            </div>
+            <div class="unit-box vmax-box">
+                <div class="top">
+                    <h3>vmax</h3>
+                    <span>Width:20vmax</span>
+                </div>
+                <p>Relative to the larger dimension of viewport (width or height).</p>
+            </div>       
+        </section>
+
+        <!-- Funtions using units  -->
+        <section>
+
+           <h2>3. Funtions Using Units</h2>
+           
+           <div class="fun-box calc-fun">
+             <h3>calc()</h3>
+             <div class="code-preview">
+                Width:calc(100% - 40px)
+             </div>
+             <p>Full width minus 40px</p>
+           </div>
+
+           <div class="fun-box min-fun">
+             <h3>min()</h3>
+             <div class="code-preview">
+                Width:min(600px , 80%)
+             </div>
+             <p>Takes the smaller value</p>
+           </div>
+
+           <div class="fun-box max-fun">
+             <h3>max()</h3>
+             <div class="code-preview">
+                Width:max(300px , 50%)
+             </div>
+             <p>Takes the larger value</p>
+           </div>
+
+           <div class="fun-box clamp-fun">
+             <h3>clamp()</h3>
+             <div class="code-preview">
+                font-size:clamp(16px , 2vw , 32px)
+             </div>
+             <p>Responsive font size</p>
+           </div>
+
+        </section>
+
+
+    </main>
+
+</body>
+</html>
