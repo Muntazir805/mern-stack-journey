@@ -1,0 +1,103 @@
+/* Universal Selector  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Includes padding & border in width */
+}
+
+/* Body styling  */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* cards container styling  */
+
+.container {
+  max-width: 1200px; /* Maximum width  */
+  min-width: 300px; /* Minimum width  */
+  display: flex;
+  margin: aut;
+}
+
+.card{
+
+    /* size properties  */
+    width: 300px;
+    height: 450px;
+    min-height: 300px;  /* Minimum Height  */
+    max-height: 500px;  /* Maximum Height  */
+
+    /* Box Model  */
+    padding: 20px;  /* Inner Spacing  */
+    border: 2px solid #ddd;
+    margin: 0 auto;   /* for center the element in horizontal   */
+    margin-bottom: 40px;  /* Outer Spacing  */
+    outline: 3px solid #f0f0f0; /* Outline line  */
+    
+    border-radius: 15px;   /* Rounded Corners  */
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    
+    /* shadow  */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+
+}
+
+  /* Image styling  */
+
+.card img{
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+ /* Content Styling  */
+
+.card h2{
+    margin-bottom: 15px;
+}
+
+.card p{
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Button styling  */
+
+button{
+    padding: 12px 24px;
+    border: none;
+    background-color: #0077ff;
+    color: white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0056cc;
+}
+
+button:active{
+    cursor: progress;
+}
