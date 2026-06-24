@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Display, Visibility & Overflow in CSS</title>
+    <link rel="stylesheet" href="display-style.css">
+</head>
+<body>
+     
+    <h1>Display & Overflow Practice</h1>
+
+    <div class="container">
+       
+        <!-- Block Element  -->
+        <div class="card block-card">
+            <h2>Display: Block </h2>   
+            <span class="block-example">
+                I behave like a block element.
+            </span>  
+        </div>
+
+        <!-- Inline Element  -->
+        <div class="card">
+           <h2>Display: Inline</h2>
+           <span class="inline-example">HTML</span>
+           <span class="inline-example">CSS</span>
+           <span class="inline-example">JavaScript</span>
+        </div>
+
+        <!-- Inline Block -->
+        <div class="card">
+            <h2>Display:Inline-Block</h2>
+            <span class="inline-block-example">Card 1</span>
+            <span class="inline-block-example">Card 2</span>
+            <span class="inline-block-example">Card 3</span>
+        </div> 
+
+        <!-- Display None  -->
+        <div class="card">
+            <h2>Display: None</h2>
+            <p>This paragraph is visible.</p>
+            <p class="display-none">
+                This paragraph is hidden using display:none
+            </p>
+        </div> 
+
+        <!-- Display Content  -->
+        <div class="card">
+            <h2>Display: contents</h2>
+            <div class="contents-parent">
+                <p>Child 1</p>
+                <p>Child 2</p>
+            </div>
+        </div> 
+
+        <!-- Visibility  -->
+        <div class="card">
+            <h2>Visibility Hidden</h2>
+            <p>Visible Paragraph</p>
+            <p class="hidden">
+                Hidden but stull occupies space
+            </p>
+            <p>Another Paragraph</p>
+        </div> 
+
+        <!-- Overflow  -->
+        <div class="card">
+            <h2>Overflow Auto</h2>
+
+            <div class="overflow-box">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus asperiores, molestiae, laboriosam numquam voluptate ut ducimus eaque sequi eos debitis consequuntur ab ipsum in omnis, molestias amet eligendi cumque?
+            </div>
+
+        </div> 
+
+        <!-- Overflow X  -->
+        <div class="card">
+            <h2>Overflow X</h2>
+            <div class="overflow-x-box">
+                ThisIsAVeryLongWordWithoutSpacesThatWillCauseHorizontalScrollingWhenItExceedsTheContainerWidth.
+            </div>
+        </div> 
+
+        <!-- Text Overflow  -->
+        <div class="card">
+            <h2>Text Overflow</h2>
+            <div class="text-overflow-box">
+                This is a very long text that will be truncated with ellipsis when it exceeds the container width.
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

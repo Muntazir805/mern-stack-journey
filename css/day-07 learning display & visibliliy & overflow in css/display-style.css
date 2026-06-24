@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    padding: 40px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card{
+    background-color: white;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2{
+    margin-bottom: 15px;
+}
+
+/*================  
+      DISPLAY 
+=================*/
+
+/* Takes full width  */
+.block-example{
+    display: block;
+    background-color: rgb(24, 163, 210);
+    padding: 10px;
+}
+
+/* Takes Only needed width  */
+.inline-example{
+    display: inline;
+    background: lightgreen;
+    padding: 10px;
+}
+
+/* Inline + width/height allowed  */
+.inline-block-example{
+    display: inline-block;
+    width: 80px;
+    background: orange;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Completely removed from layout  */
+.display-none{
+    display: none;
+}
+
+/* Parent disappears, children remain  */
+.contents-parent{
+  display: contents;
+}
+
+/* =================
+      VISIBILITY 
+=================== */
+
+/* Hidden but keeps space  */
+.hidden:hover{
+    visibility: hidden;
+}
+
+/* =================
+      OVERFLOW 
+=================== */
+
+.overflow-box{
+    height: 100px;
+    overflow: auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+ /* Horizontal scroll  */
+ .overflow-x-box{
+    width: 250px;
+    overflow-x: auto;
+    border: 1px solid black;
+    padding: 10px;
+    white-space: nowrap;
+ }
+
+ /* Ellipsis (...)  */
+ .text-overflow-box{
+    width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border: 1px solid black;
+    padding: 10px;
+ }
+
+
+
+
+
