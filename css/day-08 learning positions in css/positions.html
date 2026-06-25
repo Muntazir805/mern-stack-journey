@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="position-style.css">
+    <title>Learning Positions in CSS</title>
+</head>
+<body>
+
+    <!-- sticky Navbar  -->
+    <nav class="navbar">
+        <h2>My Website</h2>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <!-- static -->
+        <div class="box static-box">
+            <h3>Positions: Static</h3>
+            <p>Default position of all elements.</p>
+        </div>
+
+        <!-- Relative  -->
+        <div class="box relative-box">
+            <h3>Position: Relative</h3>
+            <p>Moved using top and left properties.</p>
+        </div> 
+
+        <!-- Absolute Parent  -->
+        <div class="parent">
+            <h3>Positions: Absolute</h3>
+            <div class="absolute-box">
+                Absolute
+            </div>
+        </div> 
+
+        <!-- Fixed Button  -->
+        <div class="fixed-box">
+           Help
+        </div>
+
+        <!-- Z-index Example  -->
+        <div class="z-index-container">
+            <div class="z-box red">
+               z-index: 1
+            </div>
+
+            <div class="z-box blue">
+                z-index: 2
+            </div>
+        </div> 
+
+    </div>
+
+    <!-- Extra Content for Scroll  -->
+    <section class="content">
+        <h2>Scroll Down</h2>
+        <p>Keep scrolling to see how the sticky navbar stays attached to the top of the screen.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam fugiat excepturi enim nemo veritatis dolores! Optio consectetur vero odit! Debitis voluptate blanditiis nostrum voluptatum, magnam nisi assumenda labore deleniti! Ex.</p>
+    </section>
+      
+</body>
+</html>

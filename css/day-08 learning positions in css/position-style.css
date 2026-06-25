@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/*=============== 
+  STICKY NAVBAR  
+================*/
+
+.navbar{
+
+    position: sticky;  /* sticks on scroll  */
+    top: 0;
+    background: #1e293b;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;     /* Always stay above */
+     
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+/*================= 
+  MAIN CONTAINER  
+===================*/
+
+.container{
+    padding: 40px;
+}
+
+.box{
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/*================= 
+   STATIC  
+===================*/
+
+.static-box{
+    position: static;   /*Default position  */ 
+}
+
+/*================= 
+    RELATIVE  
+===================*/
+
+.relative-box{
+    position: relative;
+    top: 20px;          /* Move down  */ 
+    left: 30px;          /* Move right  */ 
+    background: #dbeafe;
+}
+
+
+/*================= 
+    ABSOLUTE  
+===================*/
+
+.parent{
+    position: relative;  /* parent reference  */
+
+    width: 400px;
+    height: 200px;
+    background: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 2px solid black;
+
+}
+
+.absolute-box{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: orange;
+    padding: 15px;
+}
+
+
+/*================= 
+    FIXED  
+===================*/
+
+.fixed-box{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2563eb;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+/*================= 
+    Z-INDEX  
+===================*/
+
+.z-index-container{
+    position: relative;
+    height: 250px;
+}
+
+.z-box{
+    width: 150px;
+    height: 150px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red{
+    background: red;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.blue{
+    background: blue;
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    z-index: 2;    /* Appears above red  */
+   
+}
+
+/* =====================
+   SCROLL CONTENT
+===================== */
+
+.content{
+    height: 1200px;
+    padding: 40px;
+}
+
+
+
