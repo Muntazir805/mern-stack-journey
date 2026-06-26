@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*  */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ==================================
+              NAVBAR
+================================== */
+
+.navbar{
+
+    display: flex;    /* Enabel Flexbox  */
+
+    justify-content: space-between;  /* main-axis alignment  */
+
+    align-items: center;       /* Cross axis alignment  */
+
+    padding: 20px 60px;
+
+    background: #1e293b;
+
+    color: white;
+
+}
+
+.logo{
+    font-size: 30px;
+}
+
+.nav-links{
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 30px;   /* Space between menu items */
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar button{
+
+    padding: 10px 20px;
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* ==================================
+              HERO SECTION
+================================== */
+
+
+.hero{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+    
+    flex-wrap: wrap;   /* Wrap on small screens  */
+
+    padding: 60px;
+
+    gap: 40px;
+}
+
+
+/* Left Side */
+
+.hero-text{
+
+    flex: 1 1 400px;      /* grow shrink basis  */
+
+    order: 1;
+}
+
+.hero-text h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.hero-text button{
+
+    padding: 12px 25px;
+    
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+
+/* Right Side  */
+
+.hero-image{
+
+    flex: 1 1 400px;
+
+    text-align: center;
+}
+
+.hero-image img{
+
+    width: 100%;
+
+    max-width: 500px;
+}
+
+
+
+/* ==================================
+            FEATURES
+================================== */
+
+
+
+.features{
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-content: center;
+
+    row-gap: 30px;
+
+    column-gap: 20px;
+
+    padding: 50px;
+}
+
+.card{
+    flex: 1 1 250px;
+    /*growshrinkbasis*/max-width: 300px;
+    padding: 30px;
+    background: #f4f4f4;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+ /* Child Property  */
+
+ .featured{
+
+    order: -1;   /* Comes first  */
+
+    align-self:  flex-start;
+
+    flex-grow: 2;   /* Takes more space  */
+
+    flex-shrink: 1;
+
+    flex-basis: 300px;
+
+ }
+
+
+ /*========================    
+        FOOTER
+ ==========================*/
+
+
+ footer{
+
+     background: #1e293b;
+
+     color: white;
+
+     text-align: center;
+
+     padding: 20px;
+ }
+
