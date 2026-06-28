@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    background: #f4f4f4;
+}
+
+/* ========================
+       CONTAINER   
+==========================*/
+/*  */
+
+.container{
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section{
+    margin-bottom: 40px;
+}
+
+label{
+    display: block;
+    margin-top: 15px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+input[type="checkbox"]{
+    width: 10%;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* ======================    
+    USER INTERACTION
+======================== */
+
+/* Unvisited link */
+a:link{
+    color: blue;
+}
+
+/* Visited Link */
+a:visited{
+    color: purple;
+}
+
+/* Mouse Hover */
+a:hover, button:hover{
+    color: red;
+}
+
+/* While Clicking */
+button:active{
+    background: green;
+}
+
+/* Focus on input */
+input:focus{
+    outline: 2px solid dodgerblue;
+    border: 2px solid transparent;
+}
+
+
+/* ======================
+      Form States
+========================*/
+
+
+/* Checked Checkbox */
+input:checked{
+    accent-color: green;
+}
+
+/* Disabled filed */
+input:disabled{
+    background: #ddd;
+}
+
+/* Enabled field */
+input:enabled{
+    border: 2px solid #555;
+}
+
+/* Required field */
+input:required{
+    border-left: 5px solid orange;
+}
+
+/* Valid input */
+input:valid{
+    border-color: green;
+}
+
+/* Invalid input */
+input:invalid{
+    border-color: red;
+}
+
+
+/* ==============================
+     STRUCTURAL PSEUDO CLASSES
+================================ */
+
+/* First item */
+
+li:first-child{
+    color: red;
+}
+
+/* Last item */
+li:last-child{
+    color: blue;
+}
+
+/* Even items */
+li:nth-child(even){
+    background: #e5f3ff;
+}
+
+/* Third list item */
+li:nth-of-type(3){
+    font-weight: bold;
+}
+
+/* Only Child */
+.single p:only-child{
+    color: green;
+}
+
+/* Not Selector */
+li:not(:first-child){
+    margin-top: 8px;
+}
+
+
+
+
+
