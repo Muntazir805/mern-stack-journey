@@ -1,0 +1,244 @@
+/*====================
+   Reset 
+====================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*====================
+    Body
+====================*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*====================
+     Navbar
+====================*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #2563eb;
+    color: white;
+}
+
+.navbar .nav-links{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn-primary{
+    background: white;
+    color: #2563eb;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover{
+   border-color: #666;
+}
+
+/*====================
+    Hero Section
+====================*/
+
+.hero-section{
+    height: 62vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+.hero-section p{
+    margin: 20px 0;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+button{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+
+    /* Transition */
+    /*
+       transition-property: all;
+       transition-duration: 0.3s;
+       transition-timing-function: ease;
+    */
+
+    /* Transition Shorthand */
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+
+/*====================
+     Translate
+====================*/
+
+.translate-btn:hover{
+    transform:translate(10px,0);
+    -webkit-transform:translate(10px,0);
+    -moz-transform:translate(10px,0);
+    -ms-transform:translate(10px,0);
+    -o-transform:translate(10px,0);
+}
+
+/* Translate X */
+
+.translate-btn:hover{
+    transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+}
+
+/* Translate Y */
+
+.translate-btn:hover{
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+}
+
+/* Transform X in Negatice value and Transform Y in positive value  */
+
+.translate-btn:hover{
+    transform: translate(-20px,20px);
+    -webkit-transform: translate(-20px,20px);
+    -moz-transform: translate(-20px,20px);
+    -ms-transform: translate(-20px,20px);
+    -o-transform: translate(-20px,20px);
+}
+
+/*=======================
+       Scale
+========================*/
+
+
+/* Scale X */
+
+.scale-btn:hover{
+    transform: scaleX(1.3);
+    -webkit-transform: scaleX(1.3);
+    -moz-transform: scaleX(1.3);
+    -ms-transform: scaleX(1.3);
+    -o-transform: scaleX(1.3);
+}
+
+/* Scale Y */
+
+.scale-btn:hover{
+    transform: scaleY(1.4);
+    -webkit-transform: scaleY(1.4);
+    -moz-transform: scaleY(1.4);
+    -ms-transform: scaleY(1.4);
+    -o-transform: scaleY(1.4);
+}
+
+/* Scale X and Scale Y */
+
+.scale-btn:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+
+/*=====================
+    Rotate
+======================*/
+
+.rotate-btn:hover{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform-origin: center;
+}
+
+
+/*====================
+    Skew
+====================*/
+
+.skew-btn:hover{
+    transform: skew(45deg);
+    -webkit-transform: skew(45deg);
+    -moz-transform: skew(45deg);
+    -ms-transform: skew(45deg);
+    -o-transform: skew(45deg);
+}
+
+/* Transition Properties Example */
+
+.rotate-btn{
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+
+/*==================
+    Footer
+==================*/
+
+footer{
+    margin-top: 80px;
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+
+
+
+
+
+
+
