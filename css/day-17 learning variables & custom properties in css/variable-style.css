@@ -1,0 +1,145 @@
+/*==================
+    CSS Variables
+===================*/
+
+
+:root{
+    --primary:#2563eb;
+    --secondary:#f4f4f4;
+    --text:#222;
+    --card:#ffffff;
+}
+
+
+/*================
+     Reset
+=================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--secondary);
+    color: var(--text);
+}
+
+/* Hide Checkbox */
+
+#theme{
+    display: none;
+}
+
+/* Container */
+
+.container{
+
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* Switch */
+
+.switch{
+    background: var(--primary);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+
+/* Card */
+
+.card{
+    background: var(--card);
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.card h1{
+
+    color: var(--primary);
+
+    margin-bottom: 15px;
+}
+
+.card p{
+
+    margin-bottom: 20px;
+}
+
+button{
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+/*====================
+    Dark Theme
+=====================*/
+
+#theme:checked ~ .container{
+
+    --primary:#ff6b35;
+    --secondary:#1f2937;
+    --text:#ffffff;
+    --card:#374151;
+}
+
+#theme:checked ~ .container{
+
+    background: var(--secondary);
+
+    color: var(--text);
+}
+
+#theme:checked ~ .container .card{
+
+    background: var(--card);
+}
+
+#theme:checked ~ .container .card h1{
+
+    color: var(--primary);
+}
+
+#theme:checked ~ .container button{
+
+    background: var(--primary);
+}
+
