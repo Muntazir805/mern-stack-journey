@@ -1,0 +1,193 @@
+/*========================
+      Reset
+========================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.hero-section{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    /* Background Image */
+    background: url("https://picsum.photos/1200/800") no-repeat center/cover; 
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
+
+/*==========================
+    Glassmorphism Card
+===========================*/
+
+.card-content{
+    width: 350px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    margin: 30px auto;
+}
+
+.card h1{
+    margin-bottom: 15px;
+}
+
+.card p{
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+/*=====================
+    Filter Examples
+======================*/
+
+.main-section{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-block: 40px;
+    padding: 40px;
+}
+
+.container{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:25px;
+}
+
+.card{
+
+    width:350px;
+
+    background:white;
+
+    padding:15px;
+
+    text-align:center;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 10px rgba(0,0,0,.2);
+}
+
+.card h3{
+
+    margin-bottom:15px;
+}
+
+img{
+
+    width:100%;
+
+    border-radius:8px;
+
+    transition:.5s;
+}
+
+section h2{
+    text-align: center;
+    margin-block: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Blur */
+.blur:hover{
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+/* Brightness */
+.brightness:hover{
+    filter: brightness(180%);
+    -webkit-filter: brightness(180%);
+}
+
+/* Contrast */
+.contrast:hover{
+    filter: contrast(200%);
+    -webkit-filter: contrast(200%);
+}
+
+/* Grayscale */
+.grayscale:hover{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+/* Sepia */
+.sepia:hover{
+    filter: sepia(100%);
+    -webkit-filter: sepia(100%);
+}
+
+/* Invert */
+.invert:hover{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+/* Multiple Filters */
+.multiple:hover{
+    filter: brightness(140%) contrast(170%) grayscale(50%) sepia(40%);
+    -webkit-filter: brightness(140%) contrast(170%) grayscale(50%) sepia(40%);
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-block: 30px;
+
+}
+
+.blur-btn:hover{
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.bright-btn:hover{
+    filter: brightness(140%);
+    -webkit-filter: brightness(140%);
+}
+
+.contrast-btn:hover{
+    filter: contrast(180%);
+    -webkit-filter: contrast(180%);
+}
+
+.multi-btn:hover{
+    filter: brightness(150%) contrast(180%) grayscale(50%);
+    -webkit-filter: brightness(150%) contrast(180%) grayscale(50%);
+}
+
