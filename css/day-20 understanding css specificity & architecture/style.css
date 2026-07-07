@@ -1,0 +1,182 @@
+/*========================
+      CSS RESET
+========================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*=======================
+     VARIABLES
+========================*/
+
+:root{
+
+    --primary: #2563eb;
+    --dark: #222;
+    --light: #f4f4f4;
+}
+
+
+/*========================
+       BODY
+========================*/
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: var(--light);
+
+    color: var(--dark);
+}
+
+
+/*========================
+    HEADER
+========================*/
+
+.header{
+
+    background: var(--primary);
+
+    padding: 20px;
+}
+
+/*========================
+    NAVBAR (BEM)
+========================*/
+
+.navbar{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.navbar__logo{
+
+    color: white;
+}
+
+.navbar__menu{
+
+    display: flex;
+
+    list-style-type: none;
+
+    gap: 20px;
+}
+
+.navbar__link{
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.navbar__link:hover{
+
+    color: yellow;
+}
+
+
+/*========================
+    HERO
+========================*/
+
+.hero{
+
+    text-align: center;
+
+    padding: 160px 20px;
+}
+
+.hero__title{
+
+    margin-bottom: 20px;
+}
+
+.hero__text{
+
+    margin-bottom: 20px;
+}
+
+.hero__button{
+    padding: 12px 25px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.hero__button:hover{
+
+    background: #1d4ed8;
+}
+
+
+/*========================
+   SPECIFICITY PRACTICE
+=========================*/
+
+/* Element Selector */
+
+p{
+    color: green;
+}
+
+/* Class Selector */
+
+.text{
+    color: blue;
+}
+
+/* ID Selector */
+
+#heading{
+    color: red;
+}
+
+/* !important */
+
+.footer__text{
+    color: white !important;
+}
+
+
+/*========================
+     Footer
+========================*/
+
+.footer{
+   
+    position: fixed;
+
+    bottom: 0;
+
+    width: 100%;
+
+    margin-top: 80px;
+
+    background: var(--dark);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
