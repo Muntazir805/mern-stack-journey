@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive Admin Dashboard</title>
+  </head>
+  <body>
+
+     <!-- =========================
+           Dashboard Container
+      ========================== -->
+
+    <div class="dashboard">
+
+        <!-- ======================
+                Sidebar
+        ======================== -->
+
+      <aside class="sidebar">
+        <h2 class="logo">Admin Panel</h2>
+
+        <nav class="navbar">
+          <ul class="sidebar-menu">
+            <li>
+              <a href="#"><i class="fa-solid fa-house"></i>Dashboard</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-user"></i>Users</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-chart-line"></i>Analytics</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-box"></i> Products</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
+            </li>
+            <li class="logout">
+              <a href="#"><i class="fa-solid fa-sign-out"></i>Logout</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+        <!-- =====================
+              Main Content
+        ======================== -->
+
+      <main class="main-content">
+        
+        <!-- Header -->
+
+        <header class="header">
+
+            <h1>Dashboard</h1>
+
+            <input type="search" placeholder="Search....">
+
+        </header>
+
+        <!-- Dashboard Cards  -->
+
+        <section class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-users"></i>
+                <h3>Total Users</h3>
+                <p>1,250</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h3>Orders</h3>
+                <p>580</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <h3>Revenue</h3>
+                <p>$15,200</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-chart-column"></i>
+                <h3>Visitors</h3>
+                <p>9,840</p>
+            </div>
+
+        </section>
+
+        <!-- Statistics -->
+
+        <section class="statistics">
+
+            <h2>Statistics Overview</h2>
+
+            <div class="stats-box">
+
+                <div class="stat">
+                    <h3>75%</h3>
+                    <p>Sales Growth</p>
+                </div>
+
+                <div class="stat">
+                    <h3>92%</h3>
+                    <p>Customer Satisfaction</p>
+                </div>
+
+                <div class="stat">
+                    <h3>65%</h3>
+                    <p>New Users</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Recent Activity Table  -->
+
+        <section class="table-section">
+
+            <h2>Recent Activity</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Ali</td>
+                        <td>Admin</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ahmed</td>
+                        <td>Editor</td>
+                        <td>Active</td>
+                    </tr>
+
+                     <tr>
+                        <td>Fatima</td>
+                        <td>User</td>
+                        <td>Inactive</td>
+                    </tr>
+
+                    <tr>
+                        <td>Irfan</td>
+                        <td>User</td>
+                        <td>Active</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- User Profile Card  -->
+
+        <section class="profile">
+             <img src="https://picsum.photos/200"
+                alt="Profile">
+             <h2>John Doe</h2>   
+             <p>Frontend Developer</p>
+             <button>Edit Profile</button>
+        </section>
+
+        <!-- Footer -->
+
+        <footer class="footer">
+
+            <p>
+                &copy; 2026 Responsive Admin Dashboard | Built with HTML & CSS
+            </p>
+
+        </footer>
+
+      </main>
+
+    </div>
+
+  </body>
+
+</html>
+
+
