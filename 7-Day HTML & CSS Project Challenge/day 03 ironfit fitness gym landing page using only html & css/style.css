@@ -1,0 +1,864 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary:#FB5B21;
+    --text:#5F5F5F;
+    --white:#FFFFFF;
+    --black:#000000;
+    --font-family:"Poppins", sans-serif;
+}
+
+body{
+    font-family: var(--font-family);
+}
+
+
+/* Header */
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border: none;
+    text-transform: uppercase;
+    font-family: var(--font-family);
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-image: url(../../assets/images/studio-portrait-attractive-fitness-couple-holds-barbell-dumbbells-sit-wooden-box-dark-grey-background\ 1.png);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+    color: var(--white);
+    padding: 1rem 4rem;
+}
+.logo h2{
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+.logo span{
+    color: var(--primary);
+}
+
+.nav-list{
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-list a{
+    color: var(--white);
+    font-size: 20px;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+
+.nav-list .our-program{
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.nav-list a:hover{
+    color: var(--primary);
+}
+
+.nav-search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--white);
+}
+
+/* Hero Section */
+
+.hero-text{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 16px;
+   margin-top: 80px;
+   
+}
+
+.hero-heading h1{
+   font-size: 4.2rem;
+   font-weight: bold;
+   color: var(--white);
+   text-transform: uppercase;
+   letter-spacing: 0%;
+}
+
+.hero-heading span{
+    color: var(--primary);
+    text-transform: lowercase;
+}
+
+.hero-para p{
+   max-width: 800px;
+   text-align: center;
+   font-size: 20px;
+   letter-spacing: 0%;
+   color: var(--white);
+}
+
+.hero-buttons{
+  display: flex;
+  gap: 2rem;
+}
+
+
+.hero-primary-btn button{
+   background-color: var(--primary);
+   color: var(--white);
+   border: 1px solid #FB5B21;
+}
+
+.hero-secondary-btn button{
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid #FFFFFF;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+.hero-secondary-btn button:hover{
+    background-color: var(--primary);
+    color: var(--white);
+    border-color: #FB5B21;
+}
+
+
+
+/* Hero Numbers Section */
+
+.hero-numbers-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 18px;
+   color: var(--white);
+}
+
+.hero-number-01 , .hero-number-02{
+    position: relative;
+}
+
+
+.hero-number-01 p{
+  padding: 1rem;
+  font-weight: 600;
+  color: #FB5B21;
+  font-size: 30px;
+}
+
+
+.hero-number-02 p{
+  padding: 1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 40px;
+}
+.hero-number-03 p{
+  padding: 1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 40px;
+}
+
+.hero-number-01 p::after , .hero-number-02 p::after{
+  content: "";
+  position: absolute;
+  right: 0;              /* Aligns it to the right edge */
+  top: 25%;              /* Vertically centers a 50% height border */
+  height: 50%;           /* Makes the border exactly half the height */
+  border-right: 2px solid #FFF; /* Your desired border thickness and color */
+}
+
+
+
+/* Our Program Section */
+
+.our-program-section{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.our-program-heading h2{
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+    padding-bottom: 1rem;
+    font-size: 40px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.our-program-heading span{
+    color: #FB5B21;
+    text-transform: capitalize;
+}
+
+.our-program-heading h2::after{
+     content: "";       /* Required to display the pseudo-element */
+     position: absolute;
+     bottom: 0;         /* Places it exactly at the bottom */
+     left: 44%;
+     height: 4px;       /* This sets the border thickness */
+     width: 12%;        /* Spans exactly half of the element */
+     background-color: var(--primary);
+}
+
+
+.our-program-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    background: #FFFFFF;
+    border: 1px solid #C8C8C8;
+}
+
+.card-image img{
+    width: 100%;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.card-text-heading li{
+  list-style-position: inside;
+}
+
+li::marker{
+    color: #FB5B21;
+}
+
+.card-text-heading h3{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0%;
+}
+
+
+
+.card-text-para p{
+    text-align: justify;
+    font-size: 16px;
+    color: #5F5F5F;
+}
+
+
+/* About Section */
+.about-container{
+  margin-left: 80px;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 55%;
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-text-heading h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0%;
+    position: relative;
+}
+
+
+.about-text-heading h2::after{
+   content: "About Ironfit";
+   position: absolute;
+   left: -10px;
+   top: -22px;
+   font-size: 76px;
+   font-style: italic;
+   color: transparent;
+   z-index: -1;
+  -webkit-text-stroke: 1px #D2D2D2;
+
+}
+
+.about-text-heading span{
+    color: #FB5B21;
+    text-transform: capitalize;
+}
+
+.about-text-para p{
+    font-size: 16px;
+    letter-spacing: 0%;
+    color: #5F5F5F;
+    text-align: justify;
+}
+
+
+.about-features{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 20px;
+    border-left: 1px solid #5F5F5F;
+
+}
+
+.about-feature-text{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  position: relative;
+}
+
+.about-feature-text::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #FB5B21;
+    left: -28px;
+}
+
+.about-feature-text h3{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.about-feature-text span{
+    color: #FB5B21;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.about-feature-text p{
+    font-size: 16px;
+    letter-spacing: 0%;
+    text-align: justify;
+}
+
+.about-image{
+    width: 45%;
+}
+
+.about-image img{
+    width: 100%;
+    height: 720px;
+}
+
+/* Feedback Section */
+
+.feedback-section{
+    margin-top: -6px;
+}
+
+.feedback-container{
+    background-image: url(../../assets/images/feedback-bg-image.png);
+    background-repeat: no-repeat;
+    background-size: contain 100%;
+    padding: 6rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.feedback-heading h2{
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+.feedback-heading span{
+    color: #FB5B21;
+    text-transform: uppercase;
+}
+
+.feedback-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-para p{
+    max-width: 570px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.feedback-person p{
+    font-size: 16px;
+}
+
+.feedback-person span{
+    font-size: 16px;
+    font-weight: 700;
+    color: #FB5B21;
+    text-transform: uppercase;
+}
+
+.feedback-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.dot-circle{
+    width: 15px;
+    height: 14px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #D5D5D5;
+}
+
+.dot-circle:first-child{
+    background-color: #FC8357;
+}
+
+
+/* Memembership Section */
+
+.membership-plan-section{
+    margin-top: 8rem;
+}
+
+.membership-plan-container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.membership-plan-heading h2{
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+    padding-bottom: 1rem;
+    font-size: 40px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.membership-plan-heading span{
+    color: #FB5B21;
+    text-transform: capitalize;
+}
+
+.membership-plan-heading h2::after{
+     content: "";    
+     position: absolute;
+     bottom: 0;       
+     left: 45%;
+     height: 4px;       
+     width: 11%;       
+     background-color: var(--primary);
+}
+
+
+.membership-plan-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.plan-card-content{
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+}
+
+.plan-card-heading{
+    border: 1px solid #000000;
+    width: 100%;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.plan-card-heading h3{
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FB5B21;
+}
+
+.plan-card-price{
+    border-inline: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.plan-card-price p:first-child{
+   font-size: 35px;
+   font-weight: 700;
+   letter-spacing: 0%;
+}
+
+.plan-card-price p:last-child{
+    font-size: 16px;
+    color: #5F5F5F;
+}
+
+ .plan-feature-content{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000000;
+    width: 100%;
+    padding: 2rem 1.4rem;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 360px;
+}
+
+.plan-card-features-list{
+    align-self: flex-start;
+}
+
+.plan-card-features-list li{
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.plan-card-features-list li::before{
+    content: "\2713"; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 600;
+    color: #FB5B21;
+    height: 24px;
+    width: 24px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.plan-card-button button{
+    margin-block: 1rem;
+    padding: 10px 90px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #FB5B21;
+    border: none;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    color: white;
+}
+
+.second-card{
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+}
+
+.first-card .plan-card-heading ,.first-card .plan-card-price ,.first-card .plan-feature-content{
+   border-right: 0px;
+}
+
+
+.second-card .plan-feature-content{
+    border: none;
+}
+.second-card .plan-card-heading{
+   border: none;
+}
+
+.second-card .plan-card-price{
+    border-block: 1px solid #000;
+    border-inline: none;
+}
+
+.second-card .plan-feature-content{
+    border: none;
+}
+
+.third-card .plan-card-heading ,.third-card .plan-card-price ,.third-card .plan-feature-content{
+   border-left: 0px;
+}
+
+
+/* CTA Section */
+
+.cta-section{
+   margin-top: 8rem;
+   margin-bottom: 4rem;
+}
+
+.cta-container{
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-heading h2{
+   font-size: 40px;
+   font-weight: bold;
+   color: #FB5B21;
+   position: relative;
+}
+
+.cta-heading span{
+   color: #000000;
+}
+
+.cta-heading h2::after{
+    content: "Are You Ready to TRANSFORM?";
+    position: absolute;
+    left: -10px;
+    top: -22px;
+    font-size: 72px;
+    font-style: italic;
+    font-weight: bold;
+    color: transparent;
+    z-index: -1;
+   -webkit-text-stroke: 1px #D2D2D2;
+   line-height: 0.95;
+}
+
+.cta-heading p{
+    font-size: 20px;
+    margin-top: -5px;
+}
+
+.cta-border{
+    width: 4px;
+    height: 115px;
+    background-color: #FB5B21;
+}
+
+.cta-button button{
+   padding: 12px 42px;
+   border-radius: 30px;
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   -ms-border-radius: 30px;
+   -o-border-radius: 30px;
+   background-color: #FB5B21;
+   color: white;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+
+/* Footer Container */
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 6rem;
+    background-color: #000;
+    color: white;
+}
+
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-text-heading h2{
+   font-size: 30px;
+   font-weight: bold;
+
+}
+
+.footer-text-heading span{
+    color: #FB5B21;
+}
+
+.footer-text-para p{
+    max-width: 320px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.footer-media-icons{
+    display: flex;
+    gap: 30px;
+
+}
+
+.media-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #FB5B21;
+    color: #FFFFFF;
+}
+
+
+.footer-quick-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.quick-links-heading h3{
+    color: #FB5B21;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.quick-links li{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-get-in-touch{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.get-in-touch-heading h3{
+    font-size: 20px;
+    color: #FB5B21;
+    font-weight: bold;
+}
+
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.flex-container p{
+    font-size: 16px;
+}
+
+.footer-copy-right{
+    background-color: #FB5B21;
+    padding-block:1.2rem;
+    color: white;
+    text-align: center;
+}
+
+.footer-copy-right p{
+    font-size: 20px;
+}
+
+.footer-copy-right span{
+    font-size: 20;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
